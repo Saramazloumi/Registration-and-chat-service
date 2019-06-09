@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="WR8-JN-BCD" customClass="RegisterView" customModule="Chat_with_login" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ttI-ES-h5E">
+                    <rect key="frame" x="16" y="64" width="382" height="326"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dN0-2E-dL4">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your first name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nks-5b-tyd">
+                            <rect key="frame" x="0.0" y="35.5" width="382" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pv7-Ns-OYt">
+                            <rect key="frame" x="0.0" y="80.5" width="382" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Choose a username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="muX-Ef-BVP">
+                            <rect key="frame" x="0.0" y="125.5" width="382" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Choose a password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f0E-ON-Sic">
+                            <rect key="frame" x="0.0" y="170.5" width="382" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ceT-Le-wX8">
+                            <rect key="frame" x="0.0" y="215.5" width="382" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registration status:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyo-zT-yFM">
+                            <rect key="frame" x="0.0" y="260.5" width="382" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzo-7Y-6dX">
+                            <rect key="frame" x="0.0" y="296" width="382" height="30"/>
+                            <state key="normal" title="Register"/>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ttI-ES-h5E" firstAttribute="leading" secondItem="CkW-vy-wZW" secondAttribute="leading" constant="16" id="m9E-Na-SFK"/>
+                <constraint firstItem="ttI-ES-h5E" firstAttribute="top" secondItem="CkW-vy-wZW" secondAttribute="top" constant="20" id="qd5-dK-iLW"/>
+                <constraint firstItem="CkW-vy-wZW" firstAttribute="trailing" secondItem="ttI-ES-h5E" secondAttribute="trailing" constant="16" id="uv9-nh-0gz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="CkW-vy-wZW"/>
+            <connections>
+                <outlet property="confirmTextField" destination="ceT-Le-wX8" id="2aJ-Zp-oRB"/>
+                <outlet property="firstNameTextField" destination="Nks-5b-tyd" id="39E-jR-4uo"/>
+                <outlet property="lastNameTextField" destination="Pv7-Ns-OYt" id="8lt-0A-6Oc"/>
+                <outlet property="passwordTextField" destination="f0E-ON-Sic" id="dPI-8N-Bxe"/>
+                <outlet property="registerBtn" destination="jzo-7Y-6dX" id="Muv-Uf-fei"/>
+                <outlet property="statusLabel" destination="vyo-zT-yFM" id="Lfn-fk-8BR"/>
+                <outlet property="userNameTextField" destination="muX-Ef-BVP" id="9gD-Zr-plD"/>
+            </connections>
+            <point key="canvasLocation" x="65" y="141"/>
+        </view>
+    </objects>
+</document>

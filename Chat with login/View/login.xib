@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="hDA-5V-xFZ" customClass="LoginView" customModule="Chat_with_login" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="S6r-Wt-Z2x">
+                    <rect key="frame" x="16" y="64" width="382" height="191"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oc3-38-3kH">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enyer your username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aFJ-gg-5pN">
+                            <rect key="frame" x="0.0" y="35.5" width="382" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SuK-fL-MK7">
+                            <rect key="frame" x="0.0" y="80.5" width="382" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login status:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hnw-8n-ajD">
+                            <rect key="frame" x="0.0" y="125.5" width="382" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9w-Um-sDl">
+                            <rect key="frame" x="0.0" y="161" width="382" height="30"/>
+                            <state key="normal" title="Log in"/>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Kng-2H-QwS" firstAttribute="trailing" secondItem="S6r-Wt-Z2x" secondAttribute="trailing" constant="16" id="mQZ-Oo-SKB"/>
+                <constraint firstItem="S6r-Wt-Z2x" firstAttribute="top" secondItem="Kng-2H-QwS" secondAttribute="top" constant="20" id="pQr-ck-SH0"/>
+                <constraint firstItem="S6r-Wt-Z2x" firstAttribute="leading" secondItem="Kng-2H-QwS" secondAttribute="leading" constant="16" id="qKO-Hz-D7H"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Kng-2H-QwS"/>
+            <connections>
+                <outlet property="loginBtn" destination="Q9w-Um-sDl" id="ucp-V8-Gd1"/>
+                <outlet property="passwordTextField" destination="SuK-fL-MK7" id="g8S-Q3-IVc"/>
+                <outlet property="statusLabel" destination="Hnw-8n-ajD" id="Tr5-15-CDW"/>
+                <outlet property="usernameTextField" destination="aFJ-gg-5pN" id="aBb-dD-Vqi"/>
+            </connections>
+            <point key="canvasLocation" x="158" y="125"/>
+        </view>
+    </objects>
+</document>

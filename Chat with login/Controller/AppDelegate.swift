@@ -1,10 +1,4 @@
-//
-//  AppDelegate.swift
-//  Chat with login
-//
-//  Created by Sara  on 2019-06-02.
-//  Copyright © 2019 Sara Mazloumi. All rights reserved.
-//
+
 
 import UIKit
 import CoreData
@@ -13,10 +7,21 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var userData = UserDefaults.standard
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let stroyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let demoViewController = stroyBoard.instantiateViewController(withIdentifier: "demo")
+        let chatViewController = stroyBoard.instantiateViewController(withIdentifier: "chat")
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        if userData.bool(forKey: "Tapped"){
+            window?.rootViewController = chatViewController
+        }else{
+            window?.rootViewController = demoViewController
+        }
+        window?.makeKeyAndVisible()
         return true
     }
 

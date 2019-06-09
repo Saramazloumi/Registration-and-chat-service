@@ -13,6 +13,13 @@
 		3086B15E22A47AF100E7EDBE /* Chat_with_login.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3086B15C22A47AF100E7EDBE /* Chat_with_login.xcdatamodeld */; };
 		3086B16022A47AF300E7EDBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3086B15F22A47AF300E7EDBE /* Assets.xcassets */; };
 		3086B16322A47AF300E7EDBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3086B16122A47AF300E7EDBE /* LaunchScreen.storyboard */; };
+		3086B17022A47C6C00E7EDBE /* register.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3086B16F22A47C6C00E7EDBE /* register.xib */; };
+		3086B17222A47C9000E7EDBE /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3086B17122A47C9000E7EDBE /* RegisterView.swift */; };
+		3086B17422A4877900E7EDBE /* login.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3086B17322A4877900E7EDBE /* login.xib */; };
+		3086B17622A4878900E7EDBE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3086B17522A4878900E7EDBE /* LoginView.swift */; };
+		3086B17822A49AC800E7EDBE /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3086B17722A49AC800E7EDBE /* ChatViewController.swift */; };
+		3086B17A22A49F4C00E7EDBE /* ChatBackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3086B17922A49F4C00E7EDBE /* ChatBackViewController.swift */; };
+		3086B17C22A49F8100E7EDBE /* SendDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3086B17B22A49F8100E7EDBE /* SendDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		3086B15F22A47AF300E7EDBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3086B16222A47AF300E7EDBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3086B16422A47AF300E7EDBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3086B16F22A47C6C00E7EDBE /* register.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = register.xib; sourceTree = "<group>"; };
+		3086B17122A47C9000E7EDBE /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		3086B17322A4877900E7EDBE /* login.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = login.xib; sourceTree = "<group>"; };
+		3086B17522A4878900E7EDBE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3086B17722A49AC800E7EDBE /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		3086B17922A49F4C00E7EDBE /* ChatBackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBackViewController.swift; sourceTree = "<group>"; };
+		3086B17B22A49F8100E7EDBE /* SendDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30458CF722AD4C4C0016BD46 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3086B17B22A49F8100E7EDBE /* SendDelegate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		3086B14922A47AF100E7EDBE = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +78,38 @@
 		3086B15422A47AF100E7EDBE /* Chat with login */ = {
 			isa = PBXGroup;
 			children = (
-				3086B15522A47AF100E7EDBE /* AppDelegate.swift */,
-				3086B15722A47AF100E7EDBE /* ViewController.swift */,
-				3086B15922A47AF100E7EDBE /* Main.storyboard */,
+				30458CF722AD4C4C0016BD46 /* Model */,
+				3086B16D22A47B6E00E7EDBE /* View */,
+				3086B16E22A47B9800E7EDBE /* Controller */,
 				3086B15F22A47AF300E7EDBE /* Assets.xcassets */,
-				3086B16122A47AF300E7EDBE /* LaunchScreen.storyboard */,
 				3086B16422A47AF300E7EDBE /* Info.plist */,
 				3086B15C22A47AF100E7EDBE /* Chat_with_login.xcdatamodeld */,
 			);
 			path = "Chat with login";
+			sourceTree = "<group>";
+		};
+		3086B16D22A47B6E00E7EDBE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3086B15922A47AF100E7EDBE /* Main.storyboard */,
+				3086B17322A4877900E7EDBE /* login.xib */,
+				3086B16F22A47C6C00E7EDBE /* register.xib */,
+				3086B16122A47AF300E7EDBE /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3086B16E22A47B9800E7EDBE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3086B15522A47AF100E7EDBE /* AppDelegate.swift */,
+				3086B15722A47AF100E7EDBE /* ViewController.swift */,
+				3086B17122A47C9000E7EDBE /* RegisterView.swift */,
+				3086B17522A4878900E7EDBE /* LoginView.swift */,
+				3086B17722A49AC800E7EDBE /* ChatViewController.swift */,
+				3086B17922A49F4C00E7EDBE /* ChatBackViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +172,8 @@
 			files = (
 				3086B16322A47AF300E7EDBE /* LaunchScreen.storyboard in Resources */,
 				3086B16022A47AF300E7EDBE /* Assets.xcassets in Resources */,
+				3086B17422A4877900E7EDBE /* login.xib in Resources */,
+				3086B17022A47C6C00E7EDBE /* register.xib in Resources */,
 				3086B15B22A47AF100E7EDBE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,7 +186,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3086B15822A47AF100E7EDBE /* ViewController.swift in Sources */,
+				3086B17222A47C9000E7EDBE /* RegisterView.swift in Sources */,
+				3086B17C22A49F8100E7EDBE /* SendDelegate.swift in Sources */,
 				3086B15E22A47AF100E7EDBE /* Chat_with_login.xcdatamodeld in Sources */,
+				3086B17622A4878900E7EDBE /* LoginView.swift in Sources */,
+				3086B17822A49AC800E7EDBE /* ChatViewController.swift in Sources */,
+				3086B17A22A49F4C00E7EDBE /* ChatBackViewController.swift in Sources */,
 				3086B15622A47AF100E7EDBE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
